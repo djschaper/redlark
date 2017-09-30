@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Xml.Linq;
 using System.IO;
 
-namespace OpenSong_Converter
+namespace redlark
 {
     public partial class Form1 : Form
     {
@@ -18,11 +18,12 @@ namespace OpenSong_Converter
         const string VERSE = "Verse";
         const string BRIDGE = "Bridge";
         const string PRE_CHORUS = "Pre-Chorus";
+        const string INTERLUDE = "Interlude";
         const string ENDING = "Ending";
         const string TAG = "Tag";
         const string MISC = "Misc";
         const string TOU = "For use solely with the SongSelect";
-        static string[] SONG_ELEMENTS = { CHORUS, VERSE, BRIDGE, PRE_CHORUS, ENDING, TAG, MISC };
+        static string[] SONG_ELEMENTS = { CHORUS, VERSE, BRIDGE, PRE_CHORUS, INTERLUDE, ENDING, TAG, MISC };
 
         XElement Song;
         string TxtFilepath;
@@ -179,16 +180,16 @@ namespace OpenSong_Converter
             Song.Add(lyrics);
 
             // update form fields
-            textBoxTitle.Text = title.Value;
-            textBoxAltTitle.Text = "";
-            textBoxAuthor.Text = author.Value;
-            textBoxCopy.Text = copyright.Value;
-            textBoxCCLI.Text = ccli.Value;
-            textBoxTimeSig.Text = "";
-            textBoxTempo.Text = "";
-            textBoxKey.Text = "";
-            textBoxEditor.Text = lyrics.Value;
-            textBoxYouTube.Text = "";
+            txtTitle.Text = title.Value;
+            txtAltTitle.Text = "";
+            txtAuthor.Text = author.Value;
+            txtCopy.Text = copyright.Value;
+            txtCCLI.Text = ccli.Value;
+            txtTimeSig.Text = "";
+            txtTempo.Text = "";
+            txtKey.Text = "";
+            txtEditor.Text = lyrics.Value;
+            txtYouTube.Text = "";
         }
 
         private void SaveToOpenSong(string filepath)
@@ -202,52 +203,52 @@ namespace OpenSong_Converter
 
         private void textBoxTitle_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("title", textBoxTitle.Text);
+            Song.SetElementValue("title", txtTitle.Text);
         }
 
         private void textBoxAltTitle_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("aka", textBoxAltTitle.Text);
+            Song.SetElementValue("aka", txtAltTitle.Text);
         }
 
         private void textBoxAuthor_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("author", textBoxAuthor.Text);
+            Song.SetElementValue("author", txtAuthor.Text);
         }
 
         private void textBoxCopy_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("copyright", textBoxCopy.Text);
+            Song.SetElementValue("copyright", txtCopy.Text);
         }
 
         private void textBoxCCLI_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("ccli", textBoxCCLI.Text);
+            Song.SetElementValue("ccli", txtCCLI.Text);
         }
 
         private void textBoxTimeSig_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("time_sig", textBoxTimeSig.Text);
+            Song.SetElementValue("time_sig", txtTimeSig.Text);
         }
 
         private void textBoxTempo_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("tempo", textBoxTempo.Text);
+            Song.SetElementValue("tempo", txtTempo.Text);
         }
 
         private void textBoxKey_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("key", textBoxKey.Text);
+            Song.SetElementValue("key", txtKey.Text);
         }
 
         private void textBoxEditor_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("lyrics", textBoxEditor.Text);
+            Song.SetElementValue("lyrics", txtEditor.Text);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("link_youtube", textBoxYouTube.Text);
+            Song.SetElementValue("link_youtube", txtYouTube.Text);
         }
     }
 }

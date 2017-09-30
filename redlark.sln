@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenSong Converter", "OpenSong Converter\OpenSong Converter.csproj", "{CA0C0CD1-2A9B-4653-893D-321B4FFE7F45}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redlark", "redlark\redlark.csproj", "{CA0C0CD1-2A9B-4653-893D-321B4FFE7F45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
