@@ -28,7 +28,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.txtEditor = new System.Windows.Forms.TextBox();
             this.lblKey = new System.Windows.Forms.Label();
             this.lblTempo = new System.Windows.Forms.Label();
             this.txtTempo = new System.Windows.Forms.TextBox();
@@ -52,22 +51,9 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.txtYouTube = new System.Windows.Forms.TextBox();
             this.lblYoutube = new System.Windows.Forms.Label();
+            this.rtxtEditor = new System.Windows.Forms.RichTextBox();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // txtEditor
-            // 
-            this.txtEditor.AcceptsReturn = true;
-            this.txtEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEditor.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditor.Location = new System.Drawing.Point(283, 28);
-            this.txtEditor.Multiline = true;
-            this.txtEditor.Name = "txtEditor";
-            this.txtEditor.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEditor.Size = new System.Drawing.Size(471, 443);
-            this.txtEditor.TabIndex = 10;
-            this.txtEditor.TextChanged += new System.EventHandler(this.textBoxEditor_TextChanged);
             // 
             // lblKey
             // 
@@ -256,12 +242,37 @@
             this.lblYoutube.TabIndex = 14;
             this.lblYoutube.Text = "YouTube Link";
             // 
+            // rtxtEditor
+            // 
+            this.rtxtEditor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtxtEditor.DetectUrls = false;
+            this.rtxtEditor.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtEditor.Location = new System.Drawing.Point(283, 29);
+            this.rtxtEditor.Name = "rtxtEditor";
+            this.rtxtEditor.Size = new System.Drawing.Size(471, 441);
+            this.rtxtEditor.TabIndex = 10;
+            this.rtxtEditor.Text = "";
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVersion.Location = new System.Drawing.Point(10, 489);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(35, 13);
+            this.lblVersion.TabIndex = 15;
+            this.lblVersion.Text = "label1";
+            // 
             // Form1
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(766, 511);
+            this.Controls.Add(this.lblVersion);
+            this.Controls.Add(this.rtxtEditor);
             this.Controls.Add(this.txtYouTube);
             this.Controls.Add(this.lblYoutube);
             this.Controls.Add(this.buttonSave);
@@ -283,7 +294,6 @@
             this.Controls.Add(this.lblTempo);
             this.Controls.Add(this.txtTempo);
             this.Controls.Add(this.lblKey);
-            this.Controls.Add(this.txtEditor);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(650, 550);
             this.Name = "Form1";
@@ -295,8 +305,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtEditor;
         private System.Windows.Forms.Label lblKey;
         private System.Windows.Forms.Label lblTempo;
         private System.Windows.Forms.TextBox txtTempo;
@@ -320,6 +328,8 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.TextBox txtYouTube;
         private System.Windows.Forms.Label lblYoutube;
+        private System.Windows.Forms.RichTextBox rtxtEditor;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
 

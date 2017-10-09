@@ -38,6 +38,7 @@ namespace redlark
         private void Form1_Load(object sender, EventArgs e)
         {
             Song = new XElement("song");
+            lblVersion.Text = Program.AssemblyVersion.ToString();
         }
 
         private void Form1_DragEnter(object sender, DragEventArgs e)
@@ -188,7 +189,7 @@ namespace redlark
             txtTimeSig.Text = "";
             txtTempo.Text = "";
             txtKey.Text = "";
-            txtEditor.Text = lyrics.Value;
+            rtxtEditor.Text = lyrics.Value;
             txtYouTube.Text = "";
         }
 
@@ -243,7 +244,7 @@ namespace redlark
 
         private void textBoxEditor_TextChanged(object sender, EventArgs e)
         {
-            Song.SetElementValue("lyrics", txtEditor.Text);
+            Song.SetElementValue("lyrics", rtxtEditor.Text);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
