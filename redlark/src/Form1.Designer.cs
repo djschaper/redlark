@@ -79,7 +79,7 @@
             this.txtTempo.Name = "txtTempo";
             this.txtTempo.Size = new System.Drawing.Size(37, 20);
             this.txtTempo.TabIndex = 7;
-            this.txtTempo.TextChanged += new System.EventHandler(this.textBoxTempo_TextChanged);
+            this.txtTempo.TextChanged += new System.EventHandler(this.txtTempo_TextChanged);
             // 
             // txtKey
             // 
@@ -87,7 +87,7 @@
             this.txtKey.Name = "txtKey";
             this.txtKey.Size = new System.Drawing.Size(51, 20);
             this.txtKey.TabIndex = 8;
-            this.txtKey.TextChanged += new System.EventHandler(this.textBoxKey_TextChanged);
+            this.txtKey.TextChanged += new System.EventHandler(this.txtKey_TextChanged);
             // 
             // lblEditor
             // 
@@ -158,7 +158,7 @@
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(232, 20);
             this.txtTitle.TabIndex = 1;
-            this.txtTitle.TextChanged += new System.EventHandler(this.textBoxTitle_TextChanged);
+            this.txtTitle.TextChanged += new System.EventHandler(this.txtTitle_TextChanged);
             // 
             // txtAltTitle
             // 
@@ -166,7 +166,7 @@
             this.txtAltTitle.Name = "txtAltTitle";
             this.txtAltTitle.Size = new System.Drawing.Size(217, 20);
             this.txtAltTitle.TabIndex = 2;
-            this.txtAltTitle.TextChanged += new System.EventHandler(this.textBoxAltTitle_TextChanged);
+            this.txtAltTitle.TextChanged += new System.EventHandler(this.txtAltTitle_TextChanged);
             // 
             // txtAuthor
             // 
@@ -174,7 +174,7 @@
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(217, 20);
             this.txtAuthor.TabIndex = 3;
-            this.txtAuthor.TextChanged += new System.EventHandler(this.textBoxAuthor_TextChanged);
+            this.txtAuthor.TextChanged += new System.EventHandler(this.txtAuthor_TextChanged);
             // 
             // txtCopy
             // 
@@ -182,7 +182,7 @@
             this.txtCopy.Name = "txtCopy";
             this.txtCopy.Size = new System.Drawing.Size(208, 20);
             this.txtCopy.TabIndex = 4;
-            this.txtCopy.TextChanged += new System.EventHandler(this.textBoxCopy_TextChanged);
+            this.txtCopy.TextChanged += new System.EventHandler(this.txtCopy_TextChanged);
             // 
             // txtCCLI
             // 
@@ -190,7 +190,7 @@
             this.txtCCLI.Name = "txtCCLI";
             this.txtCCLI.Size = new System.Drawing.Size(100, 20);
             this.txtCCLI.TabIndex = 5;
-            this.txtCCLI.TextChanged += new System.EventHandler(this.textBoxCCLI_TextChanged);
+            this.txtCCLI.TextChanged += new System.EventHandler(this.txtCCLI_TextChanged);
             // 
             // txtTimeSig
             // 
@@ -198,7 +198,7 @@
             this.txtTimeSig.Name = "txtTimeSig";
             this.txtTimeSig.Size = new System.Drawing.Size(52, 20);
             this.txtTimeSig.TabIndex = 6;
-            this.txtTimeSig.TextChanged += new System.EventHandler(this.textBoxTimeSig_TextChanged);
+            this.txtTimeSig.TextChanged += new System.EventHandler(this.txtTimeSig_TextChanged);
             // 
             // openFileDialog1
             // 
@@ -231,7 +231,7 @@
             this.txtYouTube.Name = "txtYouTube";
             this.txtYouTube.Size = new System.Drawing.Size(185, 20);
             this.txtYouTube.TabIndex = 9;
-            this.txtYouTube.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtYouTube.TextChanged += new System.EventHandler(this.txtYouTube_TextChanged);
             // 
             // lblYoutube
             // 
@@ -254,6 +254,7 @@
             this.rtxtEditor.Size = new System.Drawing.Size(471, 441);
             this.rtxtEditor.TabIndex = 10;
             this.rtxtEditor.Text = "";
+            this.rtxtEditor.TextChanged += new System.EventHandler(this.rtxtEditor_TextChanged);
             // 
             // lblVersion
             // 

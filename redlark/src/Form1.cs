@@ -189,8 +189,8 @@ namespace redlark
             txtTimeSig.Text = "";
             txtTempo.Text = "";
             txtKey.Text = "";
-            rtxtEditor.Text = lyrics.Value;
             txtYouTube.Text = "";
+            rtxtEditor.Text = lyrics.Value;
         }
 
         private void SaveToOpenSong(string filepath)
@@ -202,54 +202,54 @@ namespace redlark
             }
         }
 
-        private void textBoxTitle_TextChanged(object sender, EventArgs e)
+        private void txtTitle_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("title", txtTitle.Text);
         }
 
-        private void textBoxAltTitle_TextChanged(object sender, EventArgs e)
+        private void txtAltTitle_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("aka", txtAltTitle.Text);
         }
 
-        private void textBoxAuthor_TextChanged(object sender, EventArgs e)
+        private void txtAuthor_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("author", txtAuthor.Text);
         }
 
-        private void textBoxCopy_TextChanged(object sender, EventArgs e)
+        private void txtCopy_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("copyright", txtCopy.Text);
         }
 
-        private void textBoxCCLI_TextChanged(object sender, EventArgs e)
+        private void txtCCLI_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("ccli", txtCCLI.Text);
         }
 
-        private void textBoxTimeSig_TextChanged(object sender, EventArgs e)
+        private void txtTimeSig_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("time_sig", txtTimeSig.Text);
         }
 
-        private void textBoxTempo_TextChanged(object sender, EventArgs e)
+        private void txtTempo_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("tempo", txtTempo.Text);
         }
 
-        private void textBoxKey_TextChanged(object sender, EventArgs e)
+        private void txtKey_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("key", txtKey.Text);
         }
 
-        private void textBoxEditor_TextChanged(object sender, EventArgs e)
-        {
-            Song.SetElementValue("lyrics", rtxtEditor.Text);
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void txtYouTube_TextChanged(object sender, EventArgs e)
         {
             Song.SetElementValue("link_youtube", txtYouTube.Text);
+        }
+
+        private void rtxtEditor_TextChanged(object sender, EventArgs e)
+        {
+            Song.SetElementValue("lyrics", rtxtEditor.Text);
         }
     }
 }
